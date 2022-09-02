@@ -1,5 +1,5 @@
 import "./App.css";
-import axios from "axios";
+import Axios from "axios";
 import React from "react";
 import { useState } from "react";
 
@@ -11,7 +11,7 @@ function App() {
 
   const searchCity = (e) => {
     if (e.key === "Enter") {
-      axios.get(url).then((response) => {
+      Axios.get(url).then((response) => {
         setData(response.data);
       });
       setCity("");
